@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Records</title>
+    <style>
+        .table {
+            background-color: aqua;
+        }
+
+        .th {
+            background-color: rgb(176, 202, 6);
+            color: rgb(78, 2, 93);
+        }
+
+        .head2 {
+            background-color: rgb(192, 186, 12);
+            color: darkmagenta;
+            box-shadow: darkgreen;
+            border-radius: inherit;
+        }
+
+        .body2 {
+            color: rgb(255, 250, 251);
+            background-color: rgb(21, 58, 139);
+        }
+
+        .h1 {
+            color: rgb(212, 10, 10);
+        }
+
+        .b {
+            color: blue;
+            background-color: rgb(148, 143, 2);
+        }
+
+        .y {
+            color: beige;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <hr><br>
+    <h1 class="h1">Stock Records</h1>
+    <table class="table">
+        <thead class="th">
+            <tr>
+                <th>Stock Name</th>
+                <th>Buying Price</th>
+                <th>Selling Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Infosys</td>
+                <td>1300</td>
+                <td>1450</td>
+            </tr>
+
+            <tr>
+                <td>TCS</td>
+                <td>3200</td>
+                <td>3500</td>
+            </tr>
+            <tr>
+                <td>Tata Power</td>
+                <td>196</td>
+                <td>300</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <br>
+    <hr><br>
+    <h1 class="h1">City List</h1>
+    <table>
+        <thead class="head2">
+            <tr>
+                <th rowspan="2">City</th>
+                <th rowspan="2">Country</th>
+                <th colspan="3">Urban Area</th>
+
+            </tr>
+            <tr>
+                <th>Population</th>
+                <th>Area</th>
+                <th>Density</th>
+            </tr>
+        </thead>
+        <tbody class="body2">
+            <tr>
+                <td>Tokyo</td>
+                <td>Japan</td>
+                <td>39,105,000</td>
+                <td>8234</td>
+                <td>6000</td>
+            </tr>
+            <tr>
+                <td>Delhi</td>
+                <td>India</td>
+                <td>20000000</td>
+                <td>8000</td>
+                <td>10000</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr><br>
+    <h1 class="h1">Forms Demo</h1>
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter UserName : </label>
+            <input id="username" type="text" placeholder="UserName" name="username">
+        </p>
+        <p>
+            <label for="password">Enter Your Password : </label>
+            <input id="password" type="password" placeholder="Password">
+        </p>
+        <p>
+            <label for="color">Select Color : </label>
+            <input id="color" type="color">
+        </p>
+        <p>
+            <label for="month">Select Month : </label>
+            <input type="month" id="month">
+        </p>
+        <p>
+            <label for="range">Select Range : </label>
+            <input type="range" id="range">
+        </p>
+
+        <button>Reset</button>
+        <button>Submit</button>
+
+
+    </form>
+
+    <br>
+    <hr><br>
+    <h1 class="h1">Search Engine</h1>
+    <br>
+    <hr><br>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button class="b">I Am Google</button>
+    </form>
+    <br><br>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button class='y'>YouTube</button>
+    </form>
+    <br>
+    <hr><br><br>
+    <h1 class="h1">more inputs</h1>
+    <form action="/bird">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I Agree To Everything</label>
+        <h3>Gender</h3>
+        <p>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+        </p>
+        <p>
+            <label for="meal">Please Select a meal type</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="chicken">Chicken</option>
+                <option value="veg">Veg</option>
+                <option value="Egg">Egg</option>
+            </select>
+
+        </p>
+        <p>
+            <label for="cheese">Amount Of Cheese</label>
+            <input type="range" id="cheese" min="2" max="10">
+        </p>
+        <p>
+            <label for="number">Enter a Number</label>
+            <input type="number" name="number" id="number" min="1" max="1000">
+        </p>
+        <p>
+            <label for="story">Tell Us Your Story</label>
+            <textarea placeholder="Please Type Somthing Here..." name="story" id="story" cols="100"
+                rows="10"></textarea>
+        </p>
+    </form>
+    <br><br>
+    <hr><br>
+    <h2 class="h1">Validations Demo</h2>
+    <form action="/teko">
+        <p>
+            <label for="text">Enter Your FirstName</label>
+            <input type="text" name="text" id="text" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" minlength="5" maxlength="25">
+        </p>
+        <p>
+            <label for="email">Enter Email Address</label>
+            <input type="email" name="email" id="email" required>
+        </p>
+        <br>
+        <button>Submit</button>
+        </p>
+    </form>
+
+</body>
+
+</html>
